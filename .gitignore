@@ -1,0 +1,47 @@
+# Environment
+.env
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Large data files — never commit raw images or the vector DB
+data/images/
+data/train2020.zip
+data/val_test2020.zip
+chroma_db/
+
+# Model weights cached locally (large, reproducibly re-downloadable)
+*.bin
+*.safetensors
+*.pt
+*.pth
+# Exception: small config/tokenizer files in model caches are fine but don't commit those either
+.cache/
+
+# IDE / OS
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+*.swp
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Evaluation results (generated artifacts, not source)
+evaluation/results.json
+
+# Logs
+*.log
+logs/
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage

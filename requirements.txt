@@ -1,0 +1,46 @@
+# Core ML / Embedding
+torch>=2.1.0
+torchvision>=0.16.0
+transformers>=4.37.0          # BLIP-2, tokenizers
+accelerate>=0.26.0            # multi-GPU / CPU offload for BLIP-2
+bitsandbytes>=0.41.0          # 4-bit quantization for BLIP-2 on constrained GPUs
+Pillow>=10.0.0                # Image I/O
+
+# OpenCLIP — kept separate from HuggingFace CLIP to get access to
+# stronger pretrained checkpoints (laion2b) and a cleaner API.
+open-clip-torch>=2.23.0
+
+# Sentence Transformers (wraps HuggingFace models with retrieval-tuned training)
+sentence-transformers>=2.6.0
+
+# Vector Store — ChromaDB chosen per assignment brief ("pick the easiest")
+# Comes with HNSW indexing out of the box; no separate server process needed.
+chromadb>=0.4.22
+
+# LLM API — Groq (fast, free tier, llama-3 models)
+groq>=0.5.0
+
+# Web serving
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9       # for FastAPI form data
+
+# Data pipeline
+requests>=2.31.0              # dataset download
+tqdm>=4.66.0                  # progress bars
+numpy>=1.24.0
+scipy>=1.11.0                 # cosine similarity, RRF score math
+
+# Config / utilities
+python-dotenv>=1.0.0          # load .env at startup
+pydantic>=2.5.0               # schema validation for API request/response
+
+# Development / notebooks (optional but included for reproducibility)
+jupyterlab>=4.0.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+scikit-learn>=1.3.0           # PCA for notebook 2D projection
+pandas>=2.1.0                 # EDA dataframes
+
+# UMAP (optional, soft-dep in notebook — falls back to PCA if not installed)
+# umap-learn>=0.5.5
