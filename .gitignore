@@ -34,9 +34,6 @@ Thumbs.db
 .ipynb_checkpoints/
 notebooks/.ipynb_checkpoints/
 
-# Evaluation results (generated artifacts, not source)
-evaluation/results.json
-
 # Logs
 *.log
 logs/

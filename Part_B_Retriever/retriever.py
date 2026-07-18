@@ -254,9 +254,26 @@ class HybridRetriever:
         )
 
         # --- Step 2: Embed query in both spaces ---
-        clip_query_emb = self.embedder.embed_query_clip(
-            parsed.expanded_query or query
-        )
+        # IMPORTANT: CLIP and BGE use DIFFERENT query strings on purpose.
+        #
+        # CLIP text encoder: use the original raw `query`, NOT the expanded query.
+        #   Rationale: CLIP was trained on short, natural, alt-text-style captions
+        #   (typically <20 tokens). Its text encoder has a hard 77-token limit and
+        #   its contrastive training objective aligns images with concise natural
+        #   language, NOT with the verbose attribute-rich prose that `expanded_query`
+        #   produces. Feeding CLIP a long structured query (e.g. "a person wearing a
+        #   vivid bright yellow waterproof rain jacket or raincoat, casual outdoor
+        #   setting...") degrades its retrieval quality because that style of text was
+        #   not in CLIP's training distribution and quickly saturates the 77-token
+        #   context window.
+        #
+        # BGE text encoder: use `expanded_query` (falls back to `query` if None).
+        #   Rationale: BGE (bge-small-en-v1.5) is a retrieval-specific sentence
+        #   encoder trained on MS-MARCO and similar datasets. It handles longer,
+        #   attribute-rich query expansions well and benefits from the extra context
+        #   that the LLM-generated expansion provides (explicit color-garment bindings,
+        #   synonyms, style descriptors). The expanded query is tuned for this space.
+        clip_query_emb = self.embedder.embed_query_clip(query)  # raw query only
         text_query_emb = self.embedder.embed_query_text(
             parsed.expanded_query or query
         )

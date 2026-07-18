@@ -4,6 +4,22 @@
 
 ---
 
+## Evaluation Results
+
+Results from `evaluation/results.json` — all 5 official queries run against the final index (post-CLIP query embedding fix, see Fix #3 notes in git history):
+
+| Query | Top-1 Image ID | Top-1 Fused Score |
+|-------|---------------|-------------------|
+| A person in a bright yellow raincoat. | `d5420eb0d6e13003799778f0157b0a0e` | **0.4758** |
+| Professional business attire inside a modern office. | `e2ba4d1e422cc766d9e8eaacd3a25a3e` | **0.4463** |
+| Someone wearing a blue shirt sitting on a park bench. | `f06fd9e18c7a2c5b533e68de88fb487b` | **0.5181** |
+| Casual weekend outfit for a city walk. | `4dc413ef5a47c5da696ba2f72835e6ed` | **0.5177** |
+| A red tie and a white shirt in a formal setting. | `13ac5b09f6c7cf03d6bddeeba2dd7d63` | **0.4900** |
+
+> Full per-query results with score breakdowns (clip/text/attribute), matched attributes, and latency are in [`evaluation/results.json`](evaluation/results.json).
+
+---
+
 ## Architecture Overview
 
 ```
@@ -51,6 +67,32 @@
 │                    Ranked Results + Explanations                      │
 └─────────────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+### ⚠️ Known Limitation — Caption Quality (Submitted Index)
+
+This submission's index was built using the **CPU-friendly `LightweightCaptionGenerator` fallback path** (base BLIP, free-text caption + heuristic keyword-proximity parsing) due to no local GPU access at submission time.
+
+Real numbers computed from `data/captions.json` (1,000 images):
+
+| Metric | Value |
+|--------|-------|
+| `parse_tier_used: 3` (heuristic fallback) | **1000 / 1000 — 100.0%** |
+| `environment: unknown` | **575 / 1000 — 57.5%** |
+| `style: unknown` | **918 / 1000 — 91.8%** |
+
+**What this means:** The structured BLIP-2 path (`Salesforce/blip2-flan-t5-xl`) that outputs validated JSON captions with explicit `environment` and `style` fields was designed and implemented (see `Part_A_Indexer/caption_generator.py`) but requires a GPU to run at scale. The current index relies on free-text BLIP captions + proximity-based keyword heuristics, which correctly identify clothing items and color-garment pairs but produce high rates of `unknown` for the categorical fields.
+
+**How to fix:** This is a **one CLI flag change** — drop `--use_lightweight_vlm` when running the indexer:
+```bash
+# Current (CPU, what was used for this submission):
+python -m Part_A_Indexer.run_indexer --mode full --use_lightweight_vlm
+
+# Intended (GPU, structured BLIP-2 path — requires ~8 GB VRAM or use --use_4bit for ~6 GB):
+python -m Part_A_Indexer.run_indexer --mode full
+```
+On a Colab T4 GPU this would take ~2–3 hours for 1,000 images and would directly resolve the high `unknown` rates. The assignment's design, code, and architecture are built for the full BLIP-2 path; only the submitted data artifact reflects the CPU fallback.
 
 ---
 

@@ -1,0 +1,946 @@
+{
+  "eval_queries": {
+    "A person in a bright yellow raincoat.": {
+      "parsed_query": {
+        "clothing_items": [
+          "raincoat"
+        ],
+        "colors": [
+          "bright yellow raincoat"
+        ],
+        "environment": "unknown",
+        "style": "casual",
+        "accessories": [],
+        "expanded_query": "A person wearing a vivid bright yellow waterproof rain jacket or raincoat.",
+        "filter_environment": false,
+        "filter_style": false,
+        "parse_method": "llm"
+      },
+      "latency_ms": 31496.4,
+      "results": [
+        {
+          "image_id": "d5420eb0d6e13003799778f0157b0a0e",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\d5420eb0d6e13003799778f0157b0a0e.jpg",
+          "clip_score": 0.2876,
+          "text_score": 0.7503,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4758,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "jacket, scarf",
+            "colors_str": "yellow jacket, yellow scarf",
+            "dominant_color": "yellow",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\d5420eb0d6e13003799778f0157b0a0e.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "bb48a572b525975f60627fdea9cfaf0a",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\bb48a572b525975f60627fdea9cfaf0a.jpg",
+          "clip_score": 0.279,
+          "text_score": 0.7392,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4673,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "skirt, jacket",
+            "colors_str": "yellow skirt, yellow jacket",
+            "dominant_color": "yellow",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\bb48a572b525975f60627fdea9cfaf0a.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "9c0aee7bd2e5b9c8fb1893a689f1f6be",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\9c0aee7bd2e5b9c8fb1893a689f1f6be.jpg",
+          "clip_score": 0.2751,
+          "text_score": 0.7268,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4597,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "dress, blazer, jacket",
+            "colors_str": "yellow dress, black blazer, black jacket",
+            "dominant_color": "yellow",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\9c0aee7bd2e5b9c8fb1893a689f1f6be.jpg",
+            "style": "business_casual"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "6748434f792cd2d10983b462884ceb3d",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\6748434f792cd2d10983b462884ceb3d.jpg",
+          "clip_score": 0.2843,
+          "text_score": 0.6554,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4272,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "top, skirt",
+            "colors_str": "yellow top, black skirt",
+            "dominant_color": "yellow",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\6748434f792cd2d10983b462884ceb3d.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "792e251c4998390888c964b3902bcfee",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\792e251c4998390888c964b3902bcfee.jpg",
+          "clip_score": 0.2431,
+          "text_score": 0.6693,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4197,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "top, skirt",
+            "colors_str": "yellow top, blue skirt",
+            "dominant_color": "blue",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\792e251c4998390888c964b3902bcfee.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "91d2989ccce4a5b3e4789f48b4e05a68",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\91d2989ccce4a5b3e4789f48b4e05a68.jpg",
+          "clip_score": 0.2542,
+          "text_score": 0.6582,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4181,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "skirt, shirt",
+            "colors_str": "yellow skirt, white shirt",
+            "dominant_color": "yellow",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\91d2989ccce4a5b3e4789f48b4e05a68.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "1a8c45a2470ba65a4ae86063a8f638a3",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\1a8c45a2470ba65a4ae86063a8f638a3.jpg",
+          "clip_score": 0.2415,
+          "text_score": 0.6665,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4178,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "jacket, shorts",
+            "colors_str": "green jacket, green shorts",
+            "dominant_color": "green",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\1a8c45a2470ba65a4ae86063a8f638a3.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "05af199570c00b817102c3cb6834a6e4",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\05af199570c00b817102c3cb6834a6e4.jpg",
+          "clip_score": 0.2528,
+          "text_score": 0.6538,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4154,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "coat, pants",
+            "colors_str": "beige coat, white pants",
+            "dominant_color": "white",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\05af199570c00b817102c3cb6834a6e4.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "f831ad98a4c687240c49c94830b92837",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\f831ad98a4c687240c49c94830b92837.jpg",
+          "clip_score": 0.2463,
+          "text_score": 0.6532,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4128,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "top, skirt",
+            "colors_str": "yellow top, white skirt",
+            "dominant_color": "yellow",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\f831ad98a4c687240c49c94830b92837.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "cf9ee579dfff83db95d3ad350557245a",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\cf9ee579dfff83db95d3ad350557245a.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.6863,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.3431,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "shirt, jacket",
+            "colors_str": "white shirt",
+            "dominant_color": "white",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\cf9ee579dfff83db95d3ad350557245a.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        }
+      ],
+      "top1_explanation": "  Image ID:      d5420eb0d6e13003799778f0157b0a0e\n  Fused score:   0.4758\n    +- CLIP (35%):  0.2876  [visual aesthetics / setting]\n    +- Text (50%):  0.7503  [compositional attributes]\n    +- Attr bonus: 0.0000  [discrete metadata match]\n  Matched attrs: (none \u2014 purely vector similarity match)\n  Image meta:    env=unknown, style=unknown, dominant_color=yellow\n  Colors:        yellow jacket, yellow scarf\n  Clothing:      jacket, scarf"
+    },
+    "Professional business attire inside a modern office.": {
+      "parsed_query": {
+        "clothing_items": [
+          "suit",
+          "dress",
+          "shirt",
+          "tie"
+        ],
+        "colors": [],
+        "environment": "office",
+        "style": "unknown",
+        "accessories": [],
+        "expanded_query": "A person wearing professional business clothing such as a suit, dress, or formal shirt and tie, inside a modern office setting.",
+        "filter_environment": true,
+        "filter_style": true,
+        "parse_method": "llm"
+      },
+      "latency_ms": 380.2,
+      "results": [
+        {
+          "image_id": "e2ba4d1e422cc766d9e8eaacd3a25a3e",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\e2ba4d1e422cc766d9e8eaacd3a25a3e.jpg",
+          "clip_score": 0.2767,
+          "text_score": 0.579,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4463,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "office",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\e2ba4d1e422cc766d9e8eaacd3a25a3e.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": [
+            "environment:office"
+          ]
+        },
+        {
+          "image_id": "8a59f4c165c289c82c84878e97ec5b94",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\8a59f4c165c289c82c84878e97ec5b94.jpg",
+          "clip_score": 0.2368,
+          "text_score": 0.5949,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4404,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "office",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\8a59f4c165c289c82c84878e97ec5b94.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": [
+            "environment:office"
+          ]
+        }
+      ],
+      "top1_explanation": "  Image ID:      e2ba4d1e422cc766d9e8eaacd3a25a3e\n  Fused score:   0.4463\n    +- CLIP (35%):  0.2767  [visual aesthetics / setting]\n    +- Text (50%):  0.5790  [compositional attributes]\n    +- Attr bonus: 0.0600  [discrete metadata match]\n  Matched attrs: environment:office\n  Image meta:    env=office, style=unknown, dominant_color=unknown"
+    },
+    "Someone wearing a blue shirt sitting on a park bench.": {
+      "parsed_query": {
+        "clothing_items": [
+          "shirt"
+        ],
+        "colors": [
+          "blue shirt"
+        ],
+        "environment": "park",
+        "style": "casual",
+        "accessories": [],
+        "expanded_query": "A person wearing a blue dress shirt or casual blue top, sitting on a park bench in a casual outdoor setting.",
+        "filter_environment": false,
+        "filter_style": false,
+        "parse_method": "llm"
+      },
+      "latency_ms": 379.8,
+      "results": [
+        {
+          "image_id": "f06fd9e18c7a2c5b533e68de88fb487b",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\f06fd9e18c7a2c5b533e68de88fb487b.jpg",
+          "clip_score": 0.3066,
+          "text_score": 0.7016,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.5181,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "park",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\f06fd9e18c7a2c5b533e68de88fb487b.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": [
+            "environment:park"
+          ]
+        },
+        {
+          "image_id": "feb984f74153effc8a7aa092540a4a6a",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\feb984f74153effc8a7aa092540a4a6a.jpg",
+          "clip_score": 0.2544,
+          "text_score": 0.6921,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4951,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "park",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\feb984f74153effc8a7aa092540a4a6a.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": [
+            "environment:park"
+          ]
+        },
+        {
+          "image_id": "a9c817161fda6df41766dfe80e939c6b",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\a9c817161fda6df41766dfe80e939c6b.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.743,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4315,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "dress",
+            "colors_str": "blue dress",
+            "dominant_color": "blue",
+            "environment": "park",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\a9c817161fda6df41766dfe80e939c6b.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": [
+            "environment:park"
+          ]
+        },
+        {
+          "image_id": "fbde6eabfb9fdf161ab493c6a76af261",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\fbde6eabfb9fdf161ab493c6a76af261.jpg",
+          "clip_score": 0.2543,
+          "text_score": 0.679,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4285,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "",
+            "colors_str": "",
+            "dominant_color": "blue",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\fbde6eabfb9fdf161ab493c6a76af261.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "1d674548eeae391259da02e21fac484c",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\1d674548eeae391259da02e21fac484c.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.7297,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4249,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "dress",
+            "colors_str": "blue dress",
+            "dominant_color": "blue",
+            "environment": "park",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\1d674548eeae391259da02e21fac484c.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": [
+            "environment:park"
+          ]
+        },
+        {
+          "image_id": "c56ae5ccf4fd933378abeed9db33792e",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\c56ae5ccf4fd933378abeed9db33792e.jpg",
+          "clip_score": 0.2623,
+          "text_score": 0.6631,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4234,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "dress, shoes",
+            "colors_str": "blue dress, black shoes",
+            "dominant_color": "blue",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\c56ae5ccf4fd933378abeed9db33792e.jpg",
+            "style": "streetwear"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "db20f594d3db0917a4a68c92b9a0e792",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\db20f594d3db0917a4a68c92b9a0e792.jpg",
+          "clip_score": 0.2599,
+          "text_score": 0.653,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4174,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\db20f594d3db0917a4a68c92b9a0e792.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "923ee30184b92ad0f16335c473d9423e",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\923ee30184b92ad0f16335c473d9423e.jpg",
+          "clip_score": 0.2692,
+          "text_score": 0.6434,
+          "attribute_bonus": 0.0,
+          "fused_score": 0.4159,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "top, pants",
+            "colors_str": "blue top, white pants",
+            "dominant_color": "blue",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\923ee30184b92ad0f16335c473d9423e.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": []
+        },
+        {
+          "image_id": "ba3d56d9c653a0ee7edd0efe284b20a2",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\ba3d56d9c653a0ee7edd0efe284b20a2.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.7067,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4133,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "park",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\ba3d56d9c653a0ee7edd0efe284b20a2.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": [
+            "environment:park"
+          ]
+        },
+        {
+          "image_id": "85f9ed6d4a1dfdcae1a4ec2dcb3a959e",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\85f9ed6d4a1dfdcae1a4ec2dcb3a959e.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.6534,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.3867,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "dress",
+            "colors_str": "",
+            "dominant_color": "tan",
+            "environment": "park",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\85f9ed6d4a1dfdcae1a4ec2dcb3a959e.jpg",
+            "style": "unknown"
+          },
+          "matched_attributes": [
+            "environment:park"
+          ]
+        }
+      ],
+      "top1_explanation": "  Image ID:      f06fd9e18c7a2c5b533e68de88fb487b\n  Fused score:   0.5181\n    +- CLIP (35%):  0.3066  [visual aesthetics / setting]\n    +- Text (50%):  0.7016  [compositional attributes]\n    +- Attr bonus: 0.0600  [discrete metadata match]\n  Matched attrs: environment:park\n  Image meta:    env=park, style=unknown, dominant_color=unknown"
+    },
+    "Casual weekend outfit for a city walk.": {
+      "parsed_query": {
+        "clothing_items": [
+          "jeans",
+          "sneakers",
+          "t-shirt",
+          "jacket"
+        ],
+        "colors": [],
+        "environment": "urban_street",
+        "style": "casual",
+        "accessories": [],
+        "expanded_query": "A person in casual everyday clothing like jeans, sneakers, and a relaxed top or jacket, walking through an urban city environment on a weekend.",
+        "filter_environment": false,
+        "filter_style": false,
+        "parse_method": "llm"
+      },
+      "latency_ms": 297.5,
+      "results": [
+        {
+          "image_id": "4dc413ef5a47c5da696ba2f72835e6ed",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\4dc413ef5a47c5da696ba2f72835e6ed.jpg",
+          "clip_score": 0.2595,
+          "text_score": 0.7338,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.5177,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "suit",
+            "colors_str": "",
+            "dominant_color": "tan",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\4dc413ef5a47c5da696ba2f72835e6ed.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "environment:urban_street"
+          ]
+        },
+        {
+          "image_id": "3641da2171647a07f88dae8d53c9a6a3",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\3641da2171647a07f88dae8d53c9a6a3.jpg",
+          "clip_score": 0.2705,
+          "text_score": 0.7185,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.5139,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "dress",
+            "colors_str": "blue dress",
+            "dominant_color": "blue",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\3641da2171647a07f88dae8d53c9a6a3.jpg",
+            "style": "streetwear"
+          },
+          "matched_attributes": [
+            "environment:urban_street"
+          ]
+        },
+        {
+          "image_id": "0d2c936a0c0acff642b5a8c5e85fd461",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\0d2c936a0c0acff642b5a8c5e85fd461.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.7464,
+          "attribute_bonus": 0.0675,
+          "fused_score": 0.4407,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "coat, sneakers",
+            "colors_str": "black coat, black sneakers",
+            "dominant_color": "black",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\0d2c936a0c0acff642b5a8c5e85fd461.jpg",
+            "style": "streetwear"
+          },
+          "matched_attributes": [
+            "environment:urban_street",
+            "clothing:sneakers"
+          ]
+        },
+        {
+          "image_id": "2c76c168ea0dc84e50cdc539d22c22da",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\2c76c168ea0dc84e50cdc539d22c22da.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.7543,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4371,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "suit",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\2c76c168ea0dc84e50cdc539d22c22da.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "environment:urban_street"
+          ]
+        },
+        {
+          "image_id": "8cabbc74ec65be47f5bd087f9e73c89f",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\8cabbc74ec65be47f5bd087f9e73c89f.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.7351,
+          "attribute_bonus": 0.0675,
+          "fused_score": 0.435,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "jeans, top",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\8cabbc74ec65be47f5bd087f9e73c89f.jpg",
+            "style": "streetwear"
+          },
+          "matched_attributes": [
+            "environment:urban_street",
+            "clothing:jeans"
+          ]
+        },
+        {
+          "image_id": "14ce620645bc27f4710e2141432e7139",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\14ce620645bc27f4710e2141432e7139.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.7242,
+          "attribute_bonus": 0.0675,
+          "fused_score": 0.4296,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "jacket",
+            "colors_str": "black jacket",
+            "dominant_color": "black",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\14ce620645bc27f4710e2141432e7139.jpg",
+            "style": "streetwear"
+          },
+          "matched_attributes": [
+            "environment:urban_street",
+            "clothing:jacket"
+          ]
+        },
+        {
+          "image_id": "9a886a145d0a9f81b15e79666a5c51b1",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\9a886a145d0a9f81b15e79666a5c51b1.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.7359,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4279,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "bag",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\9a886a145d0a9f81b15e79666a5c51b1.jpg",
+            "style": "streetwear"
+          },
+          "matched_attributes": [
+            "environment:urban_street"
+          ]
+        },
+        {
+          "image_id": "bf1163bfb3381070ba9a5466bde4802c",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\bf1163bfb3381070ba9a5466bde4802c.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.7356,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4278,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "bag",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\bf1163bfb3381070ba9a5466bde4802c.jpg",
+            "style": "streetwear"
+          },
+          "matched_attributes": [
+            "environment:urban_street"
+          ]
+        },
+        {
+          "image_id": "6078876b1eef9845bf6cd8ed6a653963",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\6078876b1eef9845bf6cd8ed6a653963.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.7355,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4277,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "bag",
+            "colors_str": "green bag",
+            "dominant_color": "green",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\6078876b1eef9845bf6cd8ed6a653963.jpg",
+            "style": "streetwear"
+          },
+          "matched_attributes": [
+            "environment:urban_street"
+          ]
+        },
+        {
+          "image_id": "2ede08066feaa38aa9127fccf570a4a9",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\2ede08066feaa38aa9127fccf570a4a9.jpg",
+          "clip_score": 0.0,
+          "text_score": 0.7354,
+          "attribute_bonus": 0.06,
+          "fused_score": 0.4277,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "dress",
+            "colors_str": "green dress",
+            "dominant_color": "green",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\2ede08066feaa38aa9127fccf570a4a9.jpg",
+            "style": "streetwear"
+          },
+          "matched_attributes": [
+            "environment:urban_street"
+          ]
+        }
+      ],
+      "top1_explanation": "  Image ID:      4dc413ef5a47c5da696ba2f72835e6ed\n  Fused score:   0.5177\n    +- CLIP (35%):  0.2595  [visual aesthetics / setting]\n    +- Text (50%):  0.7338  [compositional attributes]\n    +- Attr bonus: 0.0600  [discrete metadata match]\n  Matched attrs: environment:urban_street\n  Image meta:    env=urban_street, style=formal, dominant_color=tan\n  Clothing:      suit"
+    },
+    "A red tie and a white shirt in a formal setting.": {
+      "parsed_query": {
+        "clothing_items": [
+          "tie",
+          "shirt"
+        ],
+        "colors": [
+          "red tie",
+          "white shirt"
+        ],
+        "environment": "office",
+        "style": "formal",
+        "accessories": [],
+        "expanded_query": "A man wearing a red necktie paired with a white dress shirt in a formal business or black-tie setting.",
+        "filter_environment": false,
+        "filter_style": true,
+        "parse_method": "llm"
+      },
+      "latency_ms": 308.8,
+      "results": [
+        {
+          "image_id": "13ac5b09f6c7cf03d6bddeeba2dd7d63",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\13ac5b09f6c7cf03d6bddeeba2dd7d63.jpg",
+          "clip_score": 0.2614,
+          "text_score": 0.692,
+          "attribute_bonus": 0.0525,
+          "fused_score": 0.49,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "suit, tie",
+            "colors_str": "",
+            "dominant_color": "tan",
+            "environment": "urban_street",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\13ac5b09f6c7cf03d6bddeeba2dd7d63.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "style:formal",
+            "clothing:tie"
+          ]
+        },
+        {
+          "image_id": "c5f29824fd3eae2e53e487b9707ec15c",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\c5f29824fd3eae2e53e487b9707ec15c.jpg",
+          "clip_score": 0.2521,
+          "text_score": 0.6819,
+          "attribute_bonus": 0.0525,
+          "fused_score": 0.4817,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "suit, tie",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\c5f29824fd3eae2e53e487b9707ec15c.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "style:formal",
+            "clothing:tie"
+          ]
+        },
+        {
+          "image_id": "2f8b848931225299bed8053bd219243f",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\2f8b848931225299bed8053bd219243f.jpg",
+          "clip_score": 0.2438,
+          "text_score": 0.6833,
+          "attribute_bonus": 0.0525,
+          "fused_score": 0.4795,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "suit, tie",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\2f8b848931225299bed8053bd219243f.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "style:formal",
+            "clothing:tie"
+          ]
+        },
+        {
+          "image_id": "7fc8a54146a81b33f348f21ad07fa141",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\7fc8a54146a81b33f348f21ad07fa141.jpg",
+          "clip_score": 0.2666,
+          "text_score": 0.6581,
+          "attribute_bonus": 0.0525,
+          "fused_score": 0.4748,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "suit, tie",
+            "colors_str": "",
+            "dominant_color": "yellow",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\7fc8a54146a81b33f348f21ad07fa141.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "style:formal",
+            "clothing:tie"
+          ]
+        },
+        {
+          "image_id": "6375bd30773a17a141a35eb4df0e4e16",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\6375bd30773a17a141a35eb4df0e4e16.jpg",
+          "clip_score": 0.226,
+          "text_score": 0.6833,
+          "attribute_bonus": 0.0525,
+          "fused_score": 0.4732,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "suit, tie",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\6375bd30773a17a141a35eb4df0e4e16.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "style:formal",
+            "clothing:tie"
+          ]
+        },
+        {
+          "image_id": "5e9318c2b27f4b6894a5f98f92845bd8",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\5e9318c2b27f4b6894a5f98f92845bd8.jpg",
+          "clip_score": 0.2318,
+          "text_score": 0.6791,
+          "attribute_bonus": 0.0525,
+          "fused_score": 0.4732,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "suit, tie",
+            "colors_str": "",
+            "dominant_color": "tan",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\5e9318c2b27f4b6894a5f98f92845bd8.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "style:formal",
+            "clothing:tie"
+          ]
+        },
+        {
+          "image_id": "13a6b649fa1638fff877ec7b8676dae9",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\13a6b649fa1638fff877ec7b8676dae9.jpg",
+          "clip_score": 0.2148,
+          "text_score": 0.6833,
+          "attribute_bonus": 0.0525,
+          "fused_score": 0.4693,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "suit, tie",
+            "colors_str": "",
+            "dominant_color": "unknown",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\13a6b649fa1638fff877ec7b8676dae9.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "style:formal",
+            "clothing:tie"
+          ]
+        },
+        {
+          "image_id": "3d951d163b5a69207c308ae1c6994f6a",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\3d951d163b5a69207c308ae1c6994f6a.jpg",
+          "clip_score": 0.2216,
+          "text_score": 0.6479,
+          "attribute_bonus": 0.0525,
+          "fused_score": 0.454,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "pants, shirt",
+            "colors_str": "red pants, red shirt",
+            "dominant_color": "red",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\3d951d163b5a69207c308ae1c6994f6a.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "style:formal",
+            "clothing:shirt"
+          ]
+        },
+        {
+          "image_id": "7687ed4a288e8e7fcf26fb6d8b75af01",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\7687ed4a288e8e7fcf26fb6d8b75af01.jpg",
+          "clip_score": 0.1807,
+          "text_score": 0.6769,
+          "attribute_bonus": 0.045,
+          "fused_score": 0.4467,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "",
+            "colors_str": "",
+            "dominant_color": "red",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\7687ed4a288e8e7fcf26fb6d8b75af01.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "style:formal"
+          ]
+        },
+        {
+          "image_id": "f83dcdc92ee98a88e256bfd72ff4e278",
+          "image_path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\f83dcdc92ee98a88e256bfd72ff4e278.jpg",
+          "clip_score": 0.1904,
+          "text_score": 0.6647,
+          "attribute_bonus": 0.045,
+          "fused_score": 0.444,
+          "metadata": {
+            "accessories_str": "",
+            "clothing_items_str": "suit, shoes",
+            "colors_str": "red shoes",
+            "dominant_color": "red",
+            "environment": "unknown",
+            "path": "C:\\Glance\\glance-fashion-retrieval\\data\\images\\f83dcdc92ee98a88e256bfd72ff4e278.jpg",
+            "style": "formal"
+          },
+          "matched_attributes": [
+            "style:formal"
+          ]
+        }
+      ],
+      "top1_explanation": "  Image ID:      13ac5b09f6c7cf03d6bddeeba2dd7d63\n  Fused score:   0.4900\n    +- CLIP (35%):  0.2614  [visual aesthetics / setting]\n    +- Text (50%):  0.6920  [compositional attributes]\n    +- Attr bonus: 0.0525  [discrete metadata match]\n  Matched attrs: style:formal, clothing:tie\n  Image meta:    env=urban_street, style=formal, dominant_color=tan\n  Clothing:      suit, tie"
+    }
+  },
+  "summary": {},
+  "metadata": {
+    "top_k": 10,
+    "fusion_weights": {
+      "alpha": 0.35,
+      "beta": 0.5,
+      "gamma": 0.15
+    },
+    "use_rrf": false
+  }
+}
